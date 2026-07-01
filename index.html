@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Requirements Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #f5f6fa;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            padding: 50px 60px;
+        }
+        h1 {
+            font-size: 2rem;
+            border-bottom: 3px solid #4a69bd;
+            padding-bottom: 12px;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.3rem;
+            color: #4a69bd;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        h3 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 14px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px 14px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #4a69bd;
+            color: #fff;
+            font-weight: 600;
+        }
+        tr:nth-child(even) td {
+            background: #f8f9fb;
+        }
+        ul, ol {
+            margin: 10px 0 18px 24px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 2px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .status-draft { background: #f0e6d3; color: #8b6914; }
+        .status-review { background: #d4e6f1; color: #1a5276; }
+        .status-approved { background: #d5f5e3; color: #1e8449; }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.85rem;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Requirements Document</h1>
+        <div class="meta">
+            <strong>Project:</strong> <span contenteditable="true">[Project Name]</span> &nbsp;|&nbsp;
+            <strong>Version:</strong> <span contenteditable="true">1.0</span> &nbsp;|&nbsp;
+            <strong>Date:</strong> <span contenteditable="true">2026-07-01</span> &nbsp;|&nbsp;
+            <strong>Status:</strong>
+            <span class="status-badge status-draft" contenteditable="true">Draft</span>
+        </div>
+
+        <h2>1. Overview</h2>
+        <p contenteditable="true">[Brief description of the product and the problem it solves.]</p>
+
+        <h2>2. Goals &amp; Success Metrics</h2>
+        <h3>Business Goals</h3>
+        <ul contenteditable="true">
+            <li>[Goal 1]</li>
+            <li>[Goal 2]</li>
+        </ul>
+        <h3>Success Metrics (KPIs)</h3>
+        <table>
+            <tr><th>Metric</th><th>Target</th><th>Measurement</th></tr>
+            <tr><td contenteditable="true">[Metric 1]</td><td contenteditable="true">[Target]</td><td contenteditable="true">[How]</td></tr>
+            <tr><td contenteditable="true">[Metric 2]</td><td contenteditable="true">[Target]</td><td contenteditable="true">[How]</td></tr>
+        </table>
+
+        <h2>3. Target Audience</h2>
+        <ul contenteditable="true">
+            <li><strong>Primary:</strong> [Primary user persona]</li>
+            <li><strong>Secondary:</strong> [Secondary user persona]</li>
+        </ul>
+
+        <h2>4. User Stories</h2>
+        <ul contenteditable="true">
+            <li>As a [user], I want to [action] so that [benefit].</li>
+            <li>As a [user], I want to [action] so that [benefit].</li>
+        </ul>
+
+        <h2>5. Functional Requirements</h2>
+        <table>
+            <tr><th>ID</th><th>Feature</th><th>Description</th><th>Priority</th></tr>
+            <tr><td>FR-01</td><td contenteditable="true">[Feature]</td><td contenteditable="true">[Description]</td><td contenteditable="true">P0</td></tr>
+            <tr><td>FR-02</td><td contenteditable="true">[Feature]</td><td contenteditable="true">[Description]</td><td contenteditable="true">P1</td></tr>
+        </table>
+
+        <h2>6. Non-Functional Requirements</h2>
+        <ul contenteditable="true">
+            <li><strong>Performance:</strong> [e.g. Page load &lt; 2s]</li>
+            <li><strong>Security:</strong> [e.g. HTTPS, auth]</li>
+            <li><strong>Scalability:</strong> [e.g. Support 10k concurrent users]</li>
+        </ul>
+
+        <h2>7. Scope</h2>
+        <h3>In Scope</h3>
+        <ul contenteditable="true">
+            <li>[Feature / deliverable]</li>
+        </ul>
+        <h3>Out of Scope</h3>
+        <ul contenteditable="true">
+            <li>[Feature / deliverable]</li>
+        </ul>
+
+        <h2>8. Timeline &amp; Milestones</h2>
+        <table>
+            <tr><th>Milestone</th><th>Deliverable</th><th>Target Date</th></tr>
+            <tr><td contenteditable="true">M1</td><td contenteditable="true">[Deliverable]</td><td contenteditable="true">[Date]</td></tr>
+            <tr><td contenteditable="true">M2</td><td contenteditable="true">[Deliverable]</td><td contenteditable="true">[Date]</td></tr>
+        </table>
+
+        <h2>9. Open Questions</h2>
+        <table>
+            <tr><th>#</th><th>Question</th><th>Owner</th><th>Status</th></tr>
+            <tr><td>1</td><td contenteditable="true">[Question]</td><td contenteditable="true">[Owner]</td><td contenteditable="true">Open</td></tr>
+        </table>
+
+        <footer>
+            &copy; 2026 — Product Requirements Document
+        </footer>
+    </div>
+</body>
+</html>
