@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8f5f0;
+      padding: 30px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #2d2d2d;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 32px;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 18px 20px 20px;
+    }
+    .card-body h2 {
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+    .card-body .cuisine {
+      font-size: 0.8rem;
+      color: #999;
+      margin-bottom: 10px;
+    }
+    .card-body .origin {
+      font-size: 0.85rem;
+      color: #555;
+    }
+    .card-body .origin span {
+      font-weight: 600;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+    .veg { background: #e8f5e9; color: #2e7d32; }
+    .non-veg { background: #fbe9e7; color: #c62828; }
+  </style>
+</head>
+<body>
+  <h1>Our Menu</h1>
+  <p class="subtitle">Discover our delicious dishes from around the world</p>
+
+  <div class="menu-grid">
+    <div class="card">
+      <img src="https://loremflickr.com/600/400/pizza" alt="Pizza">
+      <div class="card-body">
+        <h2>Pizza</h2>
+        <p class="cuisine">Italian Cuisine</p>
+        <p class="origin">Origin: <span>Italy</span></p>
+        <span class="tag non-veg">Non-Vegetarian</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://loremflickr.com/600/400/malatang" alt="Malatang">
+      <div class="card-body">
+        <h2>Malatang</h2>
+        <p class="cuisine">Chinese Cuisine</p>
+        <p class="origin">Origin: <span>China</span></p>
+        <span class="tag non-veg">Non-Vegetarian</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://loremflickr.com/600/400/padthai" alt="Pad Thai">
+      <div class="card-body">
+        <h2>Pad Thai</h2>
+        <p class="cuisine">Thai Cuisine</p>
+        <p class="origin">Origin: <span>Thailand</span></p>
+        <span class="tag non-veg">Non-Vegetarian</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://loremflickr.com/600/400/burger" alt="Burger">
+      <div class="card-body">
+        <h2>Burger</h2>
+        <p class="cuisine">American Cuisine</p>
+        <p class="origin">Origin: <span>United States</span></p>
+        <span class="tag non-veg">Non-Vegetarian</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://loremflickr.com/600/400/sushi" alt="Sushi">
+      <div class="card-body">
+        <h2>Sushi</h2>
+        <p class="cuisine">Japanese Cuisine</p>
+        <p class="origin">Origin: <span>Japan</span></p>
+        <span class="tag non-veg">Non-Vegetarian</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://loremflickr.com/600/400/medovik" alt="Medovik">
+      <div class="card-body">
+        <h2>Medovik</h2>
+        <p class="cuisine">Russian Cuisine</p>
+        <p class="origin">Origin: <span>Russia</span></p>
+        <span class="tag non-veg">Non-Vegetarian</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
